@@ -41,7 +41,7 @@ def predict_alzheimer(image_path, weights_path):
         label = CLASSES[1]
         score = predictions[1]
     # If Mild (Index 0) is > 15%, we report it
-    elif predictions[0] > 0.15:
+    elif predictions[0] > 0.10:
         label = CLASSES[0]
         score = predictions[0]
     else:
